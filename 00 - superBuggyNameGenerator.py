@@ -3,7 +3,7 @@ import random
 vowels = ["a", "e", "i", "o", "u", "y", "oo", "ee", "ae", "ai", "ao", "au", "ea", "eo", "eu", "ei", "ia", "ie", "io", "iu", "oa", "oi", "ou", "oe"]
 consonants = ["b", "bw", "c", "d", "f", "fw", "g", "gw", "h", "hw", "j", "k", "kw", "l", "m", "mw", "n", "p", "pw", "q", "r", "s", "sw", "t", "tw", "v", "w", "x", "y", "z", "bl", "br", "cl", "cr", "dr", "fl", "fr", "gl", "gr", "hr", "kl", "kr", "ng", "pl", "pr", "qu", "sl", "sr", "st", "str", "tr", "ts", "vl", "wr"]
 def randomName():
-    length = random.randint(2, 8)
+    length = random.randint(2, 10)
     nameVowelNumber = []
     nameConsonantNumber = []
     for x in range(0, (length - 2)):
@@ -32,11 +32,11 @@ def randomName():
     if not name:
         w = random.randint(6, (len(vowels) - 1))
         name.append(vowels[w])
-    print(nameVowels)
-    print(nameConsonants)
-    print(nameVowelNumber)
-    print(nameConsonantNumber)
-    print(name)
+##    print(nameVowels)
+##    print(nameConsonants)
+##    print(nameVowelNumber)
+##    print(nameConsonantNumber)
+##    print(name)
     print("".join(name))
 while True:
     randomName()
